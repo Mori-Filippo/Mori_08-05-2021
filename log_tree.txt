@@ -1,0 +1,8 @@
+*   1e26163 (HEAD -> master, origin/master) commit per fusione ramo dev
+|\  
+| * 191ae5e (origin/dev, dev) Aggiunta regola al css da applicare al tag h2
+* | e5dd280 Aggiunta nuova immagine. Modificata regola css
+|/  
+* 29e14c6 Aggiunto file style.css
+* 38e4a37 Aggiunta pagina web località di mare
+* e68f791 Prima Commit

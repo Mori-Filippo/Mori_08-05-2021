@@ -1,0 +1,186 @@
+commit 1e2616359d0493a114c57f4efbd409553b34df34
+Merge: e5dd280 191ae5e
+Author: Mori Filippo <morifilippo@isisdavinci.eu>
+Date:   Sat May 8 12:04:57 2021 +0200
+
+    commit per fusione ramo dev
+
+commit e5dd280546a6265cca5ba0b91fb02f80aee0a168
+Author: Mori Filippo <morifilippo@isisdavinci.eu>
+Date:   Sat May 8 12:02:46 2021 +0200
+
+    Aggiunta nuova immagine. Modificata regola css
+
+diff --git a/css/style.css b/css/style.css
+index e4eabea..27eca66 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1,4 +1,4 @@
+ .text-red
+ {
+-    color: red;
++    color: green;
+ }
+\ No newline at end of file
+diff --git "a/img/localit\303\240_marina2.jpg" "b/img/localit\303\240_marina2.jpg"
+new file mode 100644
+index 0000000..a02ca7e
+Binary files /dev/null and "b/img/localit\303\240_marina2.jpg" differ
+diff --git a/localitaMare.html b/localitaMare.html
+index 2c9f662..d8fdca5 100644
+--- a/localitaMare.html
++++ b/localitaMare.html
+@@ -9,6 +9,6 @@
+ </head>
+ <body>
+     <h2 class="text-red">Maldive</h2>
+-    <img src="img/località_marina.jpg" width="40%px"></img>
++    <img src="img/località_marina2.jpg" width="40%px"></img>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 191ae5e5b3943f26e8b559d8bb6ab8e3ec91e257
+Author: Mori Filippo <morifilippo@isisdavinci.eu>
+Date:   Sat May 8 11:58:23 2021 +0200
+
+    Aggiunta regola al css da applicare al tag h2
+
+diff --git a/css/style.css b/css/style.css
+index e4eabea..3f86a76 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1,4 +1,9 @@
+ .text-red
+ {
+     color: red;
++}
++
++.text-center
++{
++    text-align: center;
+ }
+\ No newline at end of file
+diff --git a/localitaMare.html b/localitaMare.html
+index 2c9f662..324564f 100644
+--- a/localitaMare.html
++++ b/localitaMare.html
+@@ -8,7 +8,7 @@
+     <link href="./css/style.css" type="text/css" rel="stylesheet">
+ </head>
+ <body>
+-    <h2 class="text-red">Maldive</h2>
++    <h2 class="text-center">Maldive</h2>
+     <img src="img/località_marina.jpg" width="40%px"></img>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 29e14c6a6babe6352ed028003953633f50887c2b
+Author: Mori Filippo <morifilippo@isisdavinci.eu>
+Date:   Sat May 8 11:55:11 2021 +0200
+
+    Aggiunto file style.css
+
+diff --git a/css/style.css b/css/style.css
+new file mode 100644
+index 0000000..e4eabea
+--- /dev/null
++++ b/css/style.css
+@@ -0,0 +1,4 @@
++.text-red
++{
++    color: red;
++}
+\ No newline at end of file
+diff --git a/localitaMare.html b/localitaMare.html
+index d392a90..2c9f662 100644
+--- a/localitaMare.html
++++ b/localitaMare.html
+@@ -5,8 +5,10 @@
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Localita Marine</title>
++    <link href="./css/style.css" type="text/css" rel="stylesheet">
+ </head>
+ <body>
+-    <h2>Maldive</h2>
++    <h2 class="text-red">Maldive</h2>
++    <img src="img/località_marina.jpg" width="40%px"></img>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 38e4a3747af8da808984a3ca0c694b00b86cbde6
+Author: Mori Filippo <morifilippo@isisdavinci.eu>
+Date:   Sat May 8 11:40:43 2021 +0200
+
+    Aggiunta pagina web località di mare
+
+diff --git a/localitaMare.html b/localitaMare.html
+new file mode 100644
+index 0000000..d392a90
+--- /dev/null
++++ b/localitaMare.html
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html lang="it">
++<head>
++    <meta charset="UTF-8">
++    <meta http-equiv="X-UA-Compatible" content="IE=edge">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Localita Marine</title>
++</head>
++<body>
++    <h2>Maldive</h2>
++</body>
++</html>
+\ No newline at end of file
+
+commit e68f7913ff0e46f7cca8eca24088dc995d1aad4e
+Author: Mori Filippo <morifilippo@isisdavinci.eu>
+Date:   Sat May 8 11:37:36 2021 +0200
+
+    Prima Commit
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..0190f8f
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++appunti.txt
+\ No newline at end of file
+diff --git "a/img/localit\303\240_marina.jpg" "b/img/localit\303\240_marina.jpg"
+new file mode 100644
+index 0000000..1d8a10b
+Binary files /dev/null and "b/img/localit\303\240_marina.jpg" differ
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..879b53c
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,14 @@
++<!DOCTYPE html>
++<html lang="it">
++<head>
++    <meta charset="UTF-8">
++    <meta http-equiv="X-UA-Compatible" content="IE=edge">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Ciao</title>
++</head>
++<body>
++    <h1>Ciao!!!</h1>
++    <p id="text-bold"></p>
++    <script src="js/script.js"></script>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/js/script.js b/js/script.js
+new file mode 100644
+index 0000000..f5ea8f4
+--- /dev/null
++++ b/js/script.js
+@@ -0,0 +1,2 @@
++var sal=document.getElementById("text-bold");
++sal.innerHTML="Questo sito è stato creato durante il compito di Tecnologie";
